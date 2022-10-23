@@ -8,4 +8,9 @@ def main(s):
     Returns:
         bool: answer
     """
-    return
+    a = s[-1]+s[-2]+s[-3]
+    if s==a:
+        m = True
+    else:
+        m = False
+    return m 
