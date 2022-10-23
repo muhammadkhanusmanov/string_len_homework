@@ -8,12 +8,12 @@ def main(s1,s2,s3):
     Returns:
         string
     """
-    m = '"['
+    m = '['
     if len(s1)%2!=0:
         m+=s1
     if len(s2)%2!=0:
         m+=f', {s2}'
     if len(s3)%2!=0:
         m+=f', {s3}'
-    m+=']"'
+    m+=']'
     return m 
