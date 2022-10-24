@@ -28,4 +28,4 @@ def main(s1,s2,s3):
 
     m+=']'
     return m 
-print(main('5123','45','456'))
+
