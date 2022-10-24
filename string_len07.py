@@ -11,9 +11,21 @@ def main(s1,s2,s3):
     m = '['
     if len(s1)%2!=0:
         m+=s1
-    if len(s2)%2!=0:
+    else:
+        m='['
+    if len(s2)%2!=0 and len(s1)%2!=0:
         m+=f', {s2}'
-    if len(s3)%2!=0:
+    elif len(s2)%2!=0:
+        m+=s2
+    else:
+        m='['
+    if len(s3)%2!=0 and (len(s1)%2!=0 or len(s2)%2!=0):
         m+=f', {s3}'
+    elif len(s3)%2!=0:
+        m+=s3
+    else:
+        m='['
+
     m+=']'
     return m 
+print(main('5123','45','456'))
