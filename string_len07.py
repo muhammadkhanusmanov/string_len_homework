@@ -22,5 +22,5 @@ def main(s1,s2,s3):
     m+=']'
     return m 
 
-print(main('123', '56', '789'))
+
 
